@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-
+import { Data } from "@/pages/api/hello";
 export default function Hello() {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState<Data>();
   const [isLoading, setLoading] = useState(false);
 
   useEffect(() => {
